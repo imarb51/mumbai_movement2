@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Locations - Mumbai Movement Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="parkour.html">What is Parkour</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="./book-trial.html" class="btn-nav-trial">BOOK TRIAL CLASS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero locations-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Our Locations</h1>
+            <p class="hero-subtitle animate-fade-in-delay">5 state-of-the-art facilities across Mumbai, designed for safe and structured movement training</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Overview -->
+    <section class="locations-overview">
+        <div class="container">
+            <h2 class="section-title">Find Your Nearest Location</h2>
+            <p class="section-subtitle">Each facility is equipped with professional parkour setups, climbing walls, and safety equipment</p>
+            
+            <div class="locations-map-grid">
+                <div class="location-quick-link" onclick="scrollToLocation('andheri')">
+                    <div class="location-icon">📍</div>
+                    <h3>Andheri West</h3>
+                    <p>Our flagship facility</p>
+                </div>
+                <div class="location-quick-link" onclick="scrollToLocation('bandra')">
+                    <div class="location-icon">📍</div>
+                    <h3>Bandra</h3>
+                    <p>Premium facility</p>
+                </div>
+                <div class="location-quick-link" onclick="scrollToLocation('powai')">
+                    <div class="location-icon">📍</div>
+                    <h3>Powai</h3>
+                    <p>Family-friendly setup</p>
+                </div>
+                <div class="location-quick-link" onclick="scrollToLocation('juhu')">
+                    <div class="location-icon">📍</div>
+                    <h3>Juhu</h3>
+                    <p>Coastal location</p>
+                </div>
+                <div class="location-quick-link" onclick="scrollToLocation('marine')">
+                    <div class="location-icon">📍</div>
+                    <h3>Marine Lines</h3>
+                    <p>Central Mumbai</p>
+                </div>
+                <div class="location-quick-link" onclick="scrollToLocation('breach')">
+                    <div class="location-icon">📍</div>
+                    <h3>Breach Candy</h3>
+                    <p>South Mumbai hub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Andheri Location -->
+    <section class="location-detail" id="andheri">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <span class="location-badge flagship">FLAGSHIP FACILITY</span>
+                    <h2 class="location-name">Andheri West</h2>
+                    <p class="location-address">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.657 16.657L13.414 20.9C12.2216 22.0924 10.2784 22.0924 9.08597 20.9L4.84297 16.657C1.21897 13.033 1.21897 7.21697 4.84297 3.59297C8.46697 -0.0310283 14.283 -0.0310283 17.907 3.59297C21.531 7.21697 21.531 13.033 17.657 16.657V16.657Z" stroke="#4E89B2" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" stroke="#4E89B2" stroke-width="2"/>
+                        </svg>
+                        123 Main Street, Andheri West, Mumbai 400053
+                    </p>
+                    
+                    <div class="location-features">
+                        <h3>Programs Offered</h3>
+                        <div class="programs-offered">
+                            <span class="program-tag">Parkour (All Levels)</span>
+                            <span class="program-tag">Rock Climbing</span>
+                            <span class="program-tag">Calisthenics</span>
+                            <span class="program-tag">Kids Programs</span>
+                            <span class="program-tag">Teens Training</span>
+                            <span class="program-tag">Adult Classes</span>
+                        </div>
+                    </div>
+
+                    <div class="location-timings">
+                        <h3>Class Timings</h3>
+                        <div class="timings-grid">
+                            <div class="timing-row">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">6:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="timing-row">
+                                <span class="day">Saturday</span>
+                                <span class="time">7:00 AM - 9:00 PM</span>
+                            </div>
+                            <div class="timing-row">
+                                <span class="day">Sunday</span>
+                                <span class="time">8:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-fees">
+                        <h3>Membership Fees</h3>
+                        <div class="fees-grid">
+                            <div class="fee-card">
+                                <h4>Monthly</h4>
+                                <p class="fee-price">₹8,000</p>
+                                <p class="fee-desc">Unlimited classes</p>
+                            </div>
+                            <div class="fee-card featured">
+                                <span class="popular-badge">POPULAR</span>
+                                <h4>Quarterly</h4>
+                                <p class="fee-price">₹21,000</p>
+                                <p class="fee-desc">Save ₹3,000</p>
+                            </div>
+                            <div class="fee-card">
+                                <h4>Annual</h4>
+                                <p class="fee-price">₹75,000</p>
+                                <p class="fee-desc">Save ₹21,000</p>
+                            </div>
+                        </div>
+                        <p class="trial-note">First trial class: ₹500 (adjustable against membership)</p>
+                    </div>
+
+                    <div class="location-cta">
+                        <a href="./book-trial.html?location=andheri" class="btn btn-primary-large">BOOK TRIAL AT ANDHERI</a>
+                        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20Andheri%20location" class="btn btn-outline" target="_blank">TALK TO US</a>
+                    </div>
+                </div>
+                
+                <div class="location-image">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Andheri Facility">
+                    <div class="location-highlights">
+                        <div class="highlight-item">✓ 10,000 sq ft facility</div>
+                        <div class="highlight-item">✓ Professional equipment</div>
+                        <div class="highlight-item">✓ Air-conditioned</div>
+                        <div class="highlight-item">✓ Certified coaches</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bandra Location -->
+    <section class="location-detail alternate" id="bandra">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Bandra Facility">
+                    <div class="location-highlights">
+                        <div class="highlight-item">✓ 8,500 sq ft facility</div>
+                        <div class="highlight-item">✓ Premium equipment</div>
+                        <div class="highlight-item">✓ Spacious layout</div>
+                        <div class="highlight-item">✓ Parent viewing area</div>
+                    </div>
+                </div>
+
+                <div class="location-info">
+                    <span class="location-badge premium">PREMIUM FACILITY</span>
+                    <h2 class="location-name">Bandra</h2>
+                    <p class="location-address">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.657 16.657L13.414 20.9C12.2216 22.0924 10.2784 22.0924 9.08597 20.9L4.84297 16.657C1.21897 13.033 1.21897 7.21697 4.84297 3.59297C8.46697 -0.0310283 14.283 -0.0310283 17.907 3.59297C21.531 7.21697 21.531 13.033 17.657 16.657V16.657Z" stroke="#4E89B2" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" stroke="#4E89B2" stroke-width="2"/>
+                        </svg>
+                        456 Linking Road, Bandra West, Mumbai 400050
+                    </p>
+                    
+                    <div class="location-features">
+                        <h3>Programs Offered</h3>
+                        <div class="programs-offered">
+                            <span class="program-tag">Parkour (All Levels)</span>
+                            <span class="program-tag">Rock Climbing</span>
+                            <span class="program-tag">Calisthenics</span>
+                            <span class="program-tag">Kids Programs</span>
+                            <span class="program-tag">Teens Training</span>
+                        </div>
+                    </div>
+
+                    <div class="location-timings">
+                        <h3>Class Timings</h3>
+                        <div class="timings-grid">
+                            <div class="timing-row">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">7:00 AM - 9:00 PM</span>
+                            </div>
+                            <div class="timing-row">
+                                <span class="day">Saturday - Sunday</span>
+                                <span class="time">8:00 AM - 7:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-fees">
+                        <h3>Membership Fees</h3>
+                        <div class="fees-grid">
+                            <div class="fee-card">
+                                <h4>Monthly</h4>
+                                <p class="fee-price">₹8,000</p>
+                                <p class="fee-desc">Unlimited classes</p>
+                            </div>
+                            <div class="fee-card featured">
+                                <span class="popular-badge">POPULAR</span>
+                                <h4>Quarterly</h4>
+                                <p class="fee-price">₹21,000</p>
+                                <p class="fee-desc">Save ₹3,000</p>
+                            </div>
+                            <div class="fee-card">
+                                <h4>Annual</h4>
+                                <p class="fee-price">₹75,000</p>
+                                <p class="fee-desc">Save ₹21,000</p>
+                            </div>
+                        </div>
+                        <p class="trial-note">First trial class: ₹500 (adjustable against membership)</p>
+                    </div>
+
+                    <div class="location-cta">
+                        <a href="./book-trial.html?location=bandra" class="btn btn-primary-large">BOOK TRIAL AT BANDRA</a>
+                        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20Bandra%20location" class="btn btn-outline" target="_blank">TALK TO US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powai Location -->
+    <section class="location-detail" id="powai">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <span class="location-badge family">FAMILY-FRIENDLY</span>
+                    <h2 class="location-name">Powai</h2>
+                    <p class="location-address">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.657 16.657L13.414 20.9C12.2216 22.0924 10.2784 22.0924 9.08597 20.9L4.84297 16.657C1.21897 13.033 1.21897 7.21697 4.84297 3.59297C8.46697 -0.0310283 14.283 -0.0310283 17.907 3.59297C21.531 7.21697 21.531 13.033 17.657 16.657V16.657Z" stroke="#4E89B2" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" stroke="#4E89B2" stroke-width="2"/>
+                        </svg>
+                        789 Hiranandani Gardens, Powai, Mumbai 400076
+                    </p>
+                    
+                    <div class="location-features">
+                        <h3>Programs Offered</h3>
+                        <div class="programs-offered">
+                            <span class="program-tag">Parkour</span>
+                            <span class="program-tag">Kids Programs</span>
+                            <span class="program-tag">Toddler Classes</span>
+                            <span class="program-tag">Teens Training</span>
+                            <span class="program-tag">Family Sessions</span>
+                        </div>
+                    </div>
+
+                    <div class="location-timings">
+                        <h3>Class Timings</h3>
+                        <div class="timings-grid">
+                            <div class="timing-row">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">4:00 PM - 9:00 PM</span>
+                            </div>
+                            <div class="timing-row">
+                                <span class="day">Saturday - Sunday</span>
+                                <span class="time">9:00 AM - 7:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-fees">
+                        <h3>Membership Fees</h3>
+                        <div class="fees-grid">
+                            <div class="fee-card">
+                                <h4>Monthly</h4>
+                                <p class="fee-price">₹7,500</p>
+                                <p class="fee-desc">Unlimited classes</p>
+                            </div>
+                            <div class="fee-card featured">
+                                <span class="popular-badge">POPULAR</span>
+                                <h4>Quarterly</h4>
+                                <p class="fee-price">₹20,000</p>
+                                <p class="fee-desc">Save ₹2,500</p>
+                            </div>
+                            <div class="fee-card">
+                                <h4>Annual</h4>
+                                <p class="fee-price">₹72,000</p>
+                                <p class="fee-desc">Save ₹18,000</p>
+                            </div>
+                        </div>
+                        <p class="trial-note">First trial class: ₹500 (adjustable against membership)</p>
+                    </div>
+
+                    <div class="location-cta">
+                        <a href="./book-trial.html?location=powai" class="btn btn-primary-large">BOOK TRIAL AT POWAI</a>
+                        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20Powai%20location" class="btn btn-outline" target="_blank">TALK TO US</a>
+                    </div>
+                </div>
+                
+                <div class="location-image">
+                    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=80" alt="Powai Facility">
+                    <div class="location-highlights">
+                        <div class="highlight-item">✓ 7,000 sq ft facility</div>
+                        <div class="highlight-item">✓ Kids-focused setup</div>
+                        <div class="highlight-item">✓ Safe environment</div>
+                        <div class="highlight-item">✓ Parking available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Juhu, Marine Lines, Breach Candy (Compact Format) -->
+    <section class="compact-locations">
+        <div class="container">
+            <h2 class="section-title">More Locations</h2>
+            <div class="compact-locations-grid">
+                <!-- Juhu -->
+                <div class="compact-location-card" id="juhu">
+                    <div class="compact-header">
+                        <h3>Juhu</h3>
+                        <span class="location-badge coastal">COASTAL</span>
+                    </div>
+                    <p class="compact-address">321 JVPD Scheme, Juhu, Mumbai 400049</p>
+                    <div class="compact-info">
+                        <strong>Programs:</strong> Parkour, Kids Programs, Beach Sessions
+                    </div>
+                    <div class="compact-info">
+                        <strong>Timings:</strong> Mon-Fri: 5PM-9PM | Sat-Sun: 9AM-6PM
+                    </div>
+                    <div class="compact-info">
+                        <strong>Monthly Fee:</strong> ₹7,500
+                    </div>
+                    <div class="compact-cta">
+                        <a href="./book-trial.html?location=juhu" class="btn btn-primary">BOOK TRIAL</a>
+                    </div>
+                </div>
+
+                <!-- Marine Lines -->
+                <div class="compact-location-card" id="marine">
+                    <div class="compact-header">
+                        <h3>Marine Lines</h3>
+                        <span class="location-badge central">CENTRAL</span>
+                    </div>
+                    <p class="compact-address">234 Marine Drive, Marine Lines, Mumbai 400020</p>
+                    <div class="compact-info">
+                        <strong>Programs:</strong> Parkour, Calisthenics, Adult Classes
+                    </div>
+                    <div class="compact-info">
+                        <strong>Timings:</strong> Mon-Fri: 6AM-10PM | Sat-Sun: 8AM-7PM
+                    </div>
+                    <div class="compact-info">
+                        <strong>Monthly Fee:</strong> ₹8,000
+                    </div>
+                    <div class="compact-cta">
+                        <a href="./book-trial.html?location=marine" class="btn btn-primary">BOOK TRIAL</a>
+                    </div>
+                </div>
+
+                <!-- Breach Candy -->
+                <div class="compact-location-card" id="breach">
+                    <div class="compact-header">
+                        <h3>Breach Candy</h3>
+                        <span class="location-badge south">SOUTH MUMBAI</span>
+                    </div>
+                    <p class="compact-address">654 Warden Road, Breach Candy, Mumbai 400026</p>
+                    <div class="compact-info">
+                        <strong>Programs:</strong> All Programs Available
+                    </div>
+                    <div class="compact-info">
+                        <strong>Timings:</strong> Mon-Fri: 7AM-9PM | Sat-Sun: 9AM-6PM
+                    </div>
+                    <div class="compact-info">
+                        <strong>Monthly Fee:</strong> ₹8,000
+                    </div>
+                    <div class="compact-cta">
+                        <a href="./book-trial.html?location=breach" class="btn btn-primary">BOOK TRIAL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Visit Us?</h2>
+                <p class="cta-description">Book a trial class at your nearest location or reach out to us for a facility tour.</p>
+                <div class="cta-buttons-large">
+                    <a href="./book-trial.html" class="btn btn-primary-large">BOOK A TRIAL CLASS</a>
+                    <a href="https://wa.me/919876543210" class="btn btn-outline" target="_blank">TALK TO US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+                    </div>
+                    <p class="footer-description">Mumbai Movement Academy - Redefining fitness through movement since 2019.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column" id="links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html#community">Community</a></li>
+                        <li><a href="index.html#faq">FAQs</a></li>
+                        <li><a href="./book-trial.html">Contact</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://wa.me/919876543210" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column" id="locations">
+                    <h4>OUR LOCATIONS</h4>
+                    <ul>
+                        <li><a href="#andheri">Andheri</a></li>
+                        <li><a href="#bandra">Bandra</a></li>
+                        <li><a href="#powai">Powai</a></li>
+                        <li><a href="#juhu">Juhu</a></li>
+                        <li><a href="#marine">Marine Lines</a></li>
+                        <li><a href="#breach">Breach Candy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column" id="contact">
+                    <h4>CONTACT</h4>
+                    <ul class="contact-info">
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li><a href="mailto:info@mumbaima.com">info@mumbaima.com</a></li>
+                        <li class="hours">Mon-Fri: 10 AM - 9 PM</li>
+                        <li class="hours">Sat: 9 AM - 7 PM</li>
+                        <li class="hours">Sun: 10 AM - 5 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mumbai Movement Academy. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToLocation(locationId) {
+            const element = document.getElementById(locationId);
+            if (element) {
+                const offsetTop = element.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+
